@@ -1,1 +1,16 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enzyme AI</title>
+  </head>
+  <body>
+    Loading...
+  </body>
+  <script>
+    const params = new URL(document.location).searchParams;
+    const famUid = params.get("f");
+    if (famUid) window.location.replace(`com.enzymeai.enzymeai://family?uid=${famUid}`);
+  </script>
+</html>
